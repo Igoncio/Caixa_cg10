@@ -39,28 +39,6 @@ body{
     margin-top: 120px;
 }
 
-.a1{
-    margin-top: 5px;
-    margin-left: 50px;
-    text-decoration: none;
-    color: inherit;
-    color: rgb(255, 255, 255);
-    font-size: 23px;
-}
-
-.botao1{
-    display: flex;
-    width: 200px;
-    height: 40px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 8px #03295D;
-    background-color: rgb(23, 23, 23);
-    transition: transform 0.3s ease;
-}
-
-.botao1:hover{
-    transform: scale(1.2);
-}
 
 .a2{
     margin-top: 5px;
@@ -75,6 +53,8 @@ body{
     display: flex;
     width: 200px;
     height: 40px;
+    margin-top: 10%;
+    margin-left: 43%;
     border-radius: 15px;
     box-shadow: 5px 5px 8px #03295D;
     background-color: rgb(23, 23, 23);
@@ -83,12 +63,4 @@ body{
 
 .botao2:hover{
     transform: scale(1.2);
-}
-
-.centralizar-botao{
-    display: flex;
-    width: 100vw;
-    justify-content: space-around;
-    margin-top: 10%;
- 
 }
