@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1A2560;
+}
+
+.hero{
+  height: 60vh;
+  width: 100%;
+}
+  
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  padding-right: 5%;
+}
+
+#logo1{
+  width: 10%;
+}
+
+#logo2{
+  width: 6%;
+}
+
+span{
+  color: rgb(216, 193, 108);
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 90px;
+}
+
+nav ul li a{
+  color: aliceblue;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  color: burlywood;
+  transition: .3s;
+}
+
+.area-form {
+  width: 574px;
+  height: 565px;  
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-top: -20%;
+  border-radius: 51px;
+}
+
+#titulo-cad{
+  text-align: center;
+  padding: 30px;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  width: 350px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+label{
+  display: flex;
+  margin-left: 120px;
+  margin-top: 45px;
+}
+
+.centraliza-form{
+  margin-top: 5%;
+} 
+
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  text-decoration: none;
+  list-style: none;
+}
+
+button:hover{
+  background-color: rgb(56, 136, 13);
+}
+
+button{
+  width: 180px;
+  height: 40px;
+  border-radius: 27px;
+  background-color: #2d2929;
+  color: antiquewhite;
+  transition: .3s;
+}

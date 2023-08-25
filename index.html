@@ -3,34 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/caixa.css">
+    <link rel="stylesheet" href="assets/css/cad.css">
     <title>Caixa</title>
 </head>
 <body>
 
+    <header class="hero">
+        <nav>
+            <img  id="logo1" src="imgs/logo separada 40 anos.png" alt="">
+            <ul>
+                <li><a href="#">Cadastro</a></li>
+                <li><a href="#">Caixa</a></li>
+                <li><a href="#">Produtos</a></li>
+            </ul>
+            <img    id="logo2"  src="imgs/cg10logo-depositphotos-bgremover.png" alt="">
+        </nav>
+    </header>
 
-    <div class="menu">
-        <ul class="nav-item">
-            <li class="sec-img"><img id="logo"  src="../imgs/logo separada 40 anos.png" alt=""></li>
-        </ul>
+    <form class="area-form">
 
-        <ul class="linha-menu">
-            <li></li>
-        </ul>
-    </div>
-
-    <main>
-
-        <span class="alinha-titulo">
-            <h3 id="titulo-caixa">Caixa do Capítulo</h3>
-        </span>
-
-        <div class="botao2">
-        <a class="a2" href="pages/começo.html">Começar</a>
-        </div>
+        <h2 id="titulo-cad">Cadastro de Produto</h2>
 
 
-    </main>
+        <div class="centraliza-form"> 
+            <label for="produto">Produto</label>
+                <div class="input">
+                    <input type="name" name="name" placeholder="Name" type="Text">
+                </div>
+
+            <label for="preco">Preço</label>
+                <div class="input">
+                    <input type="preco" name="preco" placeholder="Preco" type="Float">
+                </div>
+
+
+            <label for="codigo">Codigo</label>
+                <div class="input">
+                    <input type="codigo" name="codigo" placeholder="Codigo" type="Int">
+                </div>
+
+            <div class="btn">
+                <button type="submit">Cadastrar</button>
+            </div>
+            
+        </div>    
+
+    </form>
+
+
+
+
     
 </body>
 </html>
