@@ -30,7 +30,8 @@ body{
   display:flex;
   justify-content: center;
 }
-input{
+
+#nome{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
@@ -39,11 +40,24 @@ input{
   border-bottom:1px solid #757575;
 }
 
-input:focus{
+#nome:focus{
    outline:none; 
 }
 
-label{
+#preco{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+#preco:focus{
+   outline:none; 
+}
+
+#label{
   display: flex;
   justify-content: center;
   color: #999;
@@ -53,17 +67,23 @@ label{
   pointer-events: none;
   left: 28%;
   top: 10px;
-  transform: translateX(-50%); /* Volta metade da largura do elemento */
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
+  transform: translateX(-50%);
+  transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label{
+#nome:focus ~ #label, #nome:valid ~ #label{
   top:-20px;
   font-size:14px;
-  color:#5264AE;
+  color:#192fa9;
+}
+
+#preco:focus ~ #label, #preco:valid ~ #label{
+  top:-20px;
+  font-size:14px;
+  color:#192fa9;
 }
 
 .centraliza-form{

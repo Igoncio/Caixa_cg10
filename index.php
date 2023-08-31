@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
                 <input type="text" name="nome" id="nome" class="inputUser" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
-                <label>Nome</label>
+                <label id="label">Nome</label>
             </div>
 
             
@@ -63,7 +63,7 @@ if(isset($_POST['submit'])){
                 <input type="float" name="preco" id="preco"class="inputUser" required>
                 <span class="highlight"></span>
                 <span class="bar"></span>
-                <label>Preço</label>
+                <label id="label">Preço</label>
             </div>
 
             <div class="btn">
