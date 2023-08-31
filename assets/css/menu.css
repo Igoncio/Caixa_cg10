@@ -1,47 +1,53 @@
-.hero{
-    height: 60vh;
-    width: 100%;
-  }
-    
-nav{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1A2560;
+}
+
+.hero-menu {
+  height: 60vh;
+  width: 100%;
+}
+
+.nav-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 15px;
 }
 
-ul{
+.ul-menu {
   display: flex;
   align-items: center;
   padding-right: 5%;
 }
 
-#logo1{
+#logo1 {
   width: 10%;
 }
 
-#logo2{
+#logo2 {
   width: 6%;
 }
 
-span{
-  color: rgb(216, 193, 108);
-}
-
-nav ul li{
+.li-menu {
   list-style-type: none;
   display: inline-block;
   padding: 10px 90px;
 }
 
-nav ul li a{
+.li-menu a {
   color: aliceblue;
   font-size: 20px;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav ul li a:hover{
+.li-menu a:hover {
   color: burlywood;
   transition: .3s;
 }

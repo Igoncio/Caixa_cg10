@@ -14,17 +14,7 @@
 </head>
 <body>
     
-    <section class="alinha-card">
 
-     
-        <div class="card1"
-            <div class="container-card1">
-                <h4><b>Heineken</b></h4>
-                <p>R$50,00</p>
-            </div>
-        </div>
-    
-    </section>
   
 
 </body>
