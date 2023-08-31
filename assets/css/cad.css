@@ -11,15 +11,16 @@ body{
 
 .area-form {
   width: 574px;
-  height: 565px;  
+  height: 430px;  
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
-  margin-top: -20%;
+  margin-top: -15%;
   border-radius: 51px;
   border: 2px solid rgb(0, 0, 0);
 }
 
 #titulo-cad{
+  font-size: 20px;
   text-align: center;
   padding: 30px;
 }
@@ -93,20 +94,24 @@ body{
 .btn{
   display: flex;
   justify-content: center;
-  margin-top: 90px;
-  text-decoration: none;
-  list-style: none;
+  margin-top: 60px;
 }
 
-button:hover{
-  background-color: rgb(56, 136, 13);
-}
 
-button{
-  width: 180px;
+.submit{
+  border: 0.5px solid #757575;
+  font-size: 18px;
+  width: 220px;
   height: 40px;
-  border-radius: 27px;
-  background-color: #2d2929;
-  color: antiquewhite;
-  transition: .3s;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.submit:hover{
+  border: none;
+  background-color: #1A2560;
+  color: #ffffff;
 }
