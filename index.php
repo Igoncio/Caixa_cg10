@@ -2,6 +2,30 @@
  
 include_once('../Caixa_cg10/includes/menu.php');
 
+
+
+if(isset($_POST['submit'])){
+
+    include_once('../Caixa_cg10/app/config.php');
+    // print_r('Nome:' . $_POST['nome']);
+    // print_r('Preço:' . $_POST['preco']);
+
+
+    $nome = $_POST['nome'];
+    $preco = $_POST['preco'];
+
+
+    $result = mysqli_query(
+        $conexao, 
+        "INSERT INTO
+        produtos(nome, preco)
+        VALUES 
+        ('$nome', '$preco')"
+    );
+
+}
+
+
 ?> 
 
 <!DOCTYPE html>
@@ -15,7 +39,7 @@ include_once('../Caixa_cg10/includes/menu.php');
 <body>
 
 
-    <form class="area-form">
+    <form action="index.php" method="POST" class="area-form">
 
         <h2 id="titulo-cad">Cadastro de Produto</h2>
 
@@ -23,18 +47,19 @@ include_once('../Caixa_cg10/includes/menu.php');
         <div class="centraliza-form"> 
             <label for="produto">Produto</label>
                 <div class="input">
-                    <input type="name" name="name" placeholder="Name" type="Text">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+ 
                 </div>
 
             <label for="preco">Preço</label>
                 <div class="input">
-                    <input type="preco" name="preco" placeholder="Preco" type="Float">
+                <input type="float" name="preco" id="preco"class="inputUser" required>
                 </div>
 
             <div class="btn">
-                <a href="comeco.php">
-                    <button type="submit">Cadastrar</button>
-                </a>
+                
+            <input type="submit" name="submit" id="submit">
+                
             </div>
             
         </div>    
