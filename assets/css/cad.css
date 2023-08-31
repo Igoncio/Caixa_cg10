@@ -6,6 +6,7 @@
 
 body{
     background: #1A2560;
+    font-family: FreeMono, monospace;
 }
 
 .area-form {
@@ -23,21 +24,46 @@ body{
   padding: 30px;
 }
 
-.input{
-  display: flex;
+.group{ 
+  position:relative; 
+  margin-bottom:45px; 
+  display:flex;
   justify-content: center;
 }
-
 input{
-  width: 350px;
-  height: 40px;
-  border-radius: 15px;
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+input:focus{
+   outline:none; 
 }
 
 label{
   display: flex;
-  margin-left: 120px;
-  margin-top: 45px;
+  justify-content: center;
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 28%;
+  top: 10px;
+  transform: translateX(-50%); /* Volta metade da largura do elemento */
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
 }
 
 .centraliza-form{

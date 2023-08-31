@@ -47,21 +47,27 @@ if(isset($_POST['submit'])){
 
 
         <div class="centraliza-form"> 
-            <label for="produto">Produto</label>
-                <div class="input">
-                <input type="text" name="nome" id="nome" class="inputUser" required>
- 
-                </div>
 
-            <label for="preco">Preço</label>
-                <div class="input">
+          
+            <div class="group">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Nome</label>
+            </div>
+
+            
+
+
+            <div class="group">
                 <input type="float" name="preco" id="preco"class="inputUser" required>
-                </div>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Preço</label>
+            </div>
 
             <div class="btn">
-                
-            <input type="submit" name="submit" id="submit">
-                
+            <input type="submit" name="submit" id="submit"> 
             </div>
             
         </div>    
