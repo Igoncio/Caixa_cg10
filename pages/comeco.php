@@ -1,15 +1,15 @@
 <?php
  
-include_once('../Caixa_cg10/includes/menu.php');
+ include_once('../includes/menu.php');
 
-?> 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Caixa_cg10/assets/css/caixa.css">
+    <link rel="stylesheet" href="../assets/css/caixa.css">
     <title>Caixa</title>
 </head>
 <body>
@@ -26,14 +26,6 @@ include_once('../Caixa_cg10/includes/menu.php');
     
     </section>
   
-
-    <div class="area-caixa">
-
-
-        
-
-    </div>
-
 
 </body>
 </html>
