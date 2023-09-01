@@ -1,35 +1,21 @@
 <?php
- 
-include_once('../includes/menu.php');
 
+    if(!empty($_GET['id']))
+    {
+        include_once('config.php');
 
+        $id = $_GET['id'];
 
+        $sqlSelect = "SELECT *  FROM produtos WHERE id=$id";
 
-if(!empty($_GET['id'])){
+        $result = $conexao->query($sqlSelect);
 
-    include_once('../app/config.php');
-
-    $id = $_GET['id'];
-
-    $sqlSelect = "SELECT * FROM produtos WHERE id=$id";
-
-    $result = $conexao->query($sqlSelect);
-
-    if($result->num_rows > 0){
-
-        while($user_data =  mysqli_fetch_assoc($result)){
-            
-            $nome = $user_data['nome'];
-            $preco = $user_data['preco'];
-
+        if($result->num_rows > 0)
+        {
+            $sqlDelete = "DELETE FROM produtos WHERE id=$id";
+            $resultDelete = $conexao->query($sqlDelete);
         }
-
     }
-    else{
-        header('Location: index.php');
-    }
-
-}
-
-
-?> 
+    header('Location: ../pages/produtos.php');
+   
+?>

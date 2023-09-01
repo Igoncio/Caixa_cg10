@@ -46,7 +46,7 @@ $result = $conexao->query($sql);
                             <i class='bi bi-pencil-square'></i>
                             </a>
 
-                            <a  href='../pages/editar.php?id=$user_data[id]'> 
+                            <a  href='../app/deletar.php?id=$user_data[id]'> 
                             <i class='bi bi-trash'></i>
                             </a>
                         </td>";
