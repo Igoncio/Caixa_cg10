@@ -1,0 +1,40 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1A2560;
+    font-family: FreeMono, monospace;
+}
+
+.tabela {
+    width: 60%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+
+.tabela th {
+    color: #ddd;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.tabela td {
+    color: #ddd;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.geral {
+    display: flex;
+    justify-content: center;
+    margin-top: -15%;
+    border-radius: 5px;
+}

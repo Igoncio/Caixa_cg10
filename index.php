@@ -19,9 +19,9 @@ if(isset($_POST['submit'])){
     $result = mysqli_query(
         $conexao, 
         "INSERT INTO
-        produtos(nome, preco)
+        produtos(nome, preco, quantidade)
         VALUES 
-        ('$nome', '$preco')"
+        ('$nome', '$preco', 0)"
     );
 
 }
