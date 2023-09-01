@@ -21,6 +21,8 @@ $result = $conexao->query($sql);
 </head>
 <body>
 
+    <i></i>
+
     <div class="geral">
         <table class="tabela">
             <thead>
@@ -41,7 +43,7 @@ $result = $conexao->query($sql);
                         echo "<td>" . $user_data['preco'] . "</td>";
                         echo "<td>" . $user_data['quantidade'] . "</td>";
                         echo "<td> 
-                            <a><i class=fa-solid fa-pen-to-square style=color: #ffffff;></i></a>
+                            <a></a>
                         </td>";
                         echo "</tr>";
                     }

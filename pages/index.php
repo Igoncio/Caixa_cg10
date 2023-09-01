@@ -1,13 +1,13 @@
 <?php
  
-include_once('../Caixa_cg10/includes/menu.php');
+include_once('../includes/menu.php');
 
 
 
 
 if(isset($_POST['submit'])){
 
-    include_once('../Caixa_cg10/app/config.php');
+    include_once('../app/config.php');
     // print_r('Nome:' . $_POST['nome']);
     // print_r('Preço:' . $_POST['preco']);
 
@@ -34,8 +34,7 @@ if(isset($_POST['submit'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Caixa_cg10/assets/css/cad.css">
-    <link rel="stylesheet" href="../Caixa_cg10/assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/cad.css">
     <title>Caixa</title>
 </head>
 <body>
@@ -55,8 +54,6 @@ if(isset($_POST['submit'])){
                 <span class="bar"></span>
                 <label id="label">Nome</label>
             </div>
-
-            
 
 
             <div class="group">
