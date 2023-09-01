@@ -4,7 +4,7 @@
 include_once('../includes/menu.php');
 include_once('../app/config.php');
 
-$sql = "SELECT * FROM produtos ORDER BY id DESC";
+$sql = "SELECT * FROM produtos ORDER BY id ASC";
 
 $result = $conexao->query($sql); 
 
@@ -17,11 +17,10 @@ $result = $conexao->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/produtos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <title>Produtos</title>
 </head>
 <body>
-
-    <i></i>
 
     <div class="geral">
         <table class="tabela">
@@ -43,7 +42,13 @@ $result = $conexao->query($sql);
                         echo "<td>" . $user_data['preco'] . "</td>";
                         echo "<td>" . $user_data['quantidade'] . "</td>";
                         echo "<td> 
-                            <a></a>
+                            <a href='../pages/editar.php?id=$user_data[id]'> 
+                            <i class='bi bi-pencil-square'></i>
+                            </a>
+
+                            <a  href='../pages/editar.php?id=$user_data[id]'> 
+                            <i class='bi bi-trash'></i>
+                            </a>
                         </td>";
                         echo "</tr>";
                     }
@@ -51,6 +56,7 @@ $result = $conexao->query($sql);
             </tbody>
         </table>
     </div>
-    
+
+
 </body>
 </html>
