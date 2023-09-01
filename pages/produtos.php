@@ -43,11 +43,11 @@ $result = $conexao->query($sql);
                         echo "<td>" . $user_data['quantidade'] . "</td>";
                         echo "<td> 
                             <a href='../pages/editar.php?id=$user_data[id]'> 
-                            <i class='bi bi-pencil-square'></i>
+                            <i class='bi bi-pencil-square' id='edit'></i>
                             </a>
 
                             <a  href='../app/deletar.php?id=$user_data[id]'> 
-                            <i class='bi bi-trash'></i>
+                            <i class='bi bi-trash'id='lixo'> </i>
                             </a>
                         </td>";
                         echo "</tr>";

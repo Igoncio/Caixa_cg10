@@ -5,71 +5,67 @@
 }
 
 body{
-    background: #1A2560;
     font-family: FreeMono, monospace;
 }
 
 .area-form {
-    width: 574px;
-    height: 430px;  
-    background-color: rgb(41, 39, 39);
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 474px;
+    height: 400px;  
     margin: 0 auto;
-    margin-top: -15%;
+    margin-top: 8%;
     border-radius: 51px;
+    box-shadow: 5px 5px 5px #010509;
   }
   
   
-#titulo-cad{
+  #titulo-cad{
+    filter: none;
     font-size: 20px;
     text-align: center;
     padding: 30px;
-    opacity: 1;
-    filter: none;
-    color: #ffffff;
-}
-
-.group{ 
+    color: #000000;
+  }
+  
+  .group{ 
     position:relative; 
     margin-bottom:45px; 
     display:flex;
     justify-content: center;
-}
-
-#nome{
-    color: #ffffff;
-    background-color: rgb(41, 39, 39);
+    
+  }
+  
+  #nome{
     font-size:18px;
     padding:10px 10px 10px 5px;
     display:block;
     width:300px;
     border:none;
-    border-bottom:1px solid rgb(255, 255, 255);
-}
-
-#nome:focus{
-    outline:none; 
-}
-
-#preco{
-    color: #ffffff;
-    background-color: rgb(41, 39, 39);
+    border-bottom:1px solid rgb(0, 0, 0);
+  }
+  
+  #nome:focus{
+     outline:none; 
+  }
+  
+  #preco{
     font-size:18px;
     padding:10px 10px 10px 5px;
     display:block;
     width:300px;
     border:none;
-    border-bottom:1px solid rgb(255, 255, 255);
+    border-bottom:1px solid rgb(0, 0, 0);
     filter: none;
-}
-
-#preco:focus{
-    outline:none; 
-}
-
-#label{
+  }
+  
+  #preco:focus{
+     outline:none; 
+  }
+  
+  #label{
     display: flex;
     justify-content: center;
-    color: #ffffff;
+    color: #000000;
     font-size: 18px;
     font-weight: normal;
     position: absolute;
@@ -80,36 +76,38 @@ body{
     transition: 0.3s ease all;
     -moz-transition: 0.3s ease all;
     -webkit-transition: 0.3s ease all;
-}
-
-
-#nome:focus ~ #label, #nome:valid ~ #label{
+  }
+  
+  /* active state */
+  #nome:focus ~ #label, #nome:valid ~ #label{
     top:-20px;
     font-size:14px;
-}
-
-#preco:focus ~ #label, #preco:valid ~ #label{
+  
+  }
+  
+  #preco:focus ~ #label, #preco:valid ~ #label{
     top:-20px;
     font-size:14px;
-}
-
-.centraliza-form{
+  }
+  
+  .centraliza-form{
     margin-top: 5%;
-} 
-
-.btn{
+  } 
+  
+  .btn{
     display: flex;
     justify-content: center;
     margin-top: 60px;
-}
+  }
+  
 
 
 .update{
-    border: 0.5px solid #757575;
+    border: 0.1px solid #84868c;
     font-size: 18px;
     width: 220px;
     height: 40px;
-    background-color: #ffffff;
+    background-color: #bec4db;
     color: rgb(0, 0, 0);
     border-radius: 20px;
     transition: 0.3s ease all;
@@ -121,4 +119,9 @@ body{
     background-color: #1A2560;
     color: #ffffff;
 }
+
+input{
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.037);
+  }
   

@@ -5,27 +5,26 @@
 }
 
 body{
-  background: #1A2560;
   font-family: FreeMono, monospace;
 }
 
 .area-form {
-  width: 574px;
-  height: 430px;  
-  background-color: rgb(41, 39, 39);
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 474px;
+  height: 400px;  
   margin: 0 auto;
-  margin-top: -15%;
+  margin-top: 8%;
   border-radius: 51px;
+  box-shadow: 5px 5px 5px #010509;
 }
 
 
 #titulo-cad{
+  filter: none;
   font-size: 20px;
   text-align: center;
   padding: 30px;
-  opacity: 1;
-  filter: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 .group{ 
@@ -42,7 +41,7 @@ body{
   display:block;
   width:300px;
   border:none;
-  border-bottom:1px solid rgb(255, 255, 255);
+  border-bottom:1px solid rgb(0, 0, 0);
 }
 
 #nome:focus{
@@ -55,7 +54,7 @@ body{
   display:block;
   width:300px;
   border:none;
-  border-bottom:1px solid rgb(255, 255, 255);
+  border-bottom:1px solid rgb(0, 0, 0);
   filter: none;
 }
 
@@ -66,7 +65,7 @@ body{
 #label{
   display: flex;
   justify-content: center;
-  color: #ffffff;
+  color: #000000;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -103,11 +102,11 @@ body{
 
 
 .submit{
-  border: 0.5px solid #757575;
+  border: 0.1px solid #84868c;
   font-size: 18px;
   width: 220px;
   height: 40px;
-  background-color: #ffffff;
+  background-color: #bec4db;
   color: rgb(0, 0, 0);
   border-radius: 20px;
   transition: 0.3s ease all;
@@ -121,6 +120,6 @@ body{
 }
 
 input{
-  color: #ffffff;
-  background-color: rgb(41, 39, 39);
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.037);
 }

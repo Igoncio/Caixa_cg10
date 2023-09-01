@@ -5,13 +5,14 @@
 }
 
 body {
-  background: #1A2560;
+  background-color: rgb(15, 25, 54);
 }
 
 .hero-menu {
-  height: 60vh;
+  background-color: rgb(15, 25, 54);
   width: 100%;
 }
+
 
 .nav-menu {
   display: flex;
@@ -23,15 +24,16 @@ body {
 .ul-menu {
   display: flex;
   align-items: center;
-  padding-right: 5%;
 }
 
 #logo1 {
-  width: 10%;
+  width: 8%;
+  margin-left: -20px;
 }
 
 #logo2 {
-  width: 6%;
+  width: 4%;
+  margin-right: 20px;
 }
 
 .li-menu {

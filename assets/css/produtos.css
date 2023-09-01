@@ -6,35 +6,54 @@
 }
 
 body{
-    background-color: #1A2560;
     font-family: FreeMono, monospace;
 }
 
 .tabela {
-    width: 60%;
+    width: 95%;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
 }
 
 
 .tabela th {
-    color: #ddd;
+    color: #000000;
     text-align: left;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000000;
 }
 
 
 .tabela td {
-    color: #ddd;
+    color: #000000;
     text-align: left;
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    padding: 30px;
+    border-bottom: 1px solid #000000;
 }
 
 .geral {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 50%;
+    margin-left: 25%;
     display: flex;
     justify-content: center;
-    margin-top: -15%;
-    border-radius: 5px;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#lixo{
+    color: red;
+    font-size: 25px;
+    transition: 2s;
+}
+
+#edit{
+    color: rgb(4, 20, 159);
+    font-size: 25px;
 }

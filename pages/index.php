@@ -45,9 +45,9 @@ if(isset($_POST['submit'])){
         <h2 id="titulo-cad">Cadastro de Produto</h2>
 
 
+    
         <div class="centraliza-form"> 
 
-          
             <div class="group">
                 <input type="text" name="nome" id="nome" class="inputUser" required>
                 <span class="highlight"></span>
