@@ -13,7 +13,7 @@
             <img  id="logo1" src="../imgs/logo separada 40 anos.png" alt="">
             <ul class="ul-menu">
                 <li class="li-menu"><a href="../pages/index.php"">Cadastro</a></li>
-                <li class="li-menu"><a href="../pages/comeco.php">Caixa</a></li>
+                <li class="li-menu"><a href="../pages/caixa.php">Caixa</a></li>
                 <li class="li-menu"><a href="../pages/produtos.php">Produtos</a></li>
             </ul>
             <img id="logo2"  src="../imgs/cg10logo-depositphotos-bgremover.png" alt="">

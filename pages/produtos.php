@@ -4,7 +4,7 @@
 include_once('../includes/menu.php');
 include_once('../app/config.php');
 
-$sql = "SELECT * FROM produtos ORDER BY id ASC";
+$sql = "SELECT * FROM produtos WHERE id > 1;";
 
 $result = $conexao->query($sql); 
 
