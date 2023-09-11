@@ -21,6 +21,7 @@ body{
 .a1{
     display: flex;
     justify-content: space-between;
+    outline: none;
     padding: 45px;
 
 }
@@ -43,3 +44,60 @@ body{
     justify-content: space-between;
     padding: 45px;
 }
+
+.inputUser {
+    width: 160px; /* Defina a largura desejada */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.option {
+    padding: 5px;
+    font-size: 13px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilizando o select */
+select {
+    width: 150px; /* Defina a largura desejada */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.contas{
+    font-size: 17px;
+    font-style: italic;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+  
+  
+.submit{
+    border: 0.1px solid #84868c;
+    font-size: 18px;
+    width: 220px;
+    height: 40px;
+    background-color: #bec4db;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+.submit:hover{
+    border: none;
+    background-color: #1A2560;
+    color: #ffffff;
+}
+

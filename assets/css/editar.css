@@ -11,7 +11,7 @@ body{
 .area-form {
     background-color: rgba(255, 255, 255, 0.75);
     width: 474px;
-    height: 400px;  
+    height: 450px;  
     margin: 0 auto;
     margin-top: 8%;
     border-radius: 51px;
@@ -43,10 +43,23 @@ body{
     border:none;
     border-bottom:1px solid rgb(0, 0, 0);
   }
+
+  #quantidade{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid rgb(0, 0, 0);
+  }
   
   #nome:focus{
      outline:none; 
   }
+
+  #quantidade:focus{
+    outline:none; 
+ }
   
   #preco{
     font-size:18px;
@@ -88,6 +101,12 @@ body{
   #preco:focus ~ #label, #preco:valid ~ #label{
     top:-20px;
     font-size:14px;
+  }
+  
+  #quantidade:focus ~ #label, #quantidade:valid ~ #label{
+    top:-20px;
+    font-size:14px;
+  
   }
   
   .centraliza-form{

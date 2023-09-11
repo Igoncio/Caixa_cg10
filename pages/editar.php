@@ -21,6 +21,7 @@ if(!empty($_GET['id'])){
             
             $nome = $user_data['nome'];
             $preco = $user_data['preco'];
+            $quant = $user_data['quantidade'];
 
         }
 
@@ -66,6 +67,13 @@ if(!empty($_GET['id'])){
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label id="label">Preço</label>
+            </div>
+
+            <div class="group">
+                <input type="float" name="quantidade" id="quantidade" value="<?php echo $quant ?>" class="inputUser" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label id="label">Editar</label>
             </div>
 
             <div class="btn">

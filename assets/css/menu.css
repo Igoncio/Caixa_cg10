@@ -4,15 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: rgb(15, 25, 54);
+body{
+  background-image: url(../../imgs/wallpapper.png);
+  font-family: FreeMono, monospace;
+  background-size: cover;
 }
-
-.hero-menu {
-  background-color: rgb(15, 25, 54);
-  width: 100%;
-}
-
 
 .nav-menu {
   display: flex;

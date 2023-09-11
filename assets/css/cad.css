@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: FreeMono, monospace;
-}
 
 .area-form {
   background-color: rgba(255, 255, 255, 0.75);

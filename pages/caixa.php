@@ -61,34 +61,43 @@ $produtos = getProdutos($conexao); // Obter a lista de produtos
                 </div>
 
                 <div class="quant">
-                    <input type="number" name="quantidade<?=$i?>" class="inputUser" min="0" value="">
+                    <input type="number" name="quantidade<?=$i?>" class="inputUser" min="0" value="0">
                 </div>
-                <input type="hidden" name="preco<?=$i?>" value="">
+                <input type="hidden" name="preco<?=$i?>" value="0">
             </div>
         <?php } ?>
 
-        <div>
-            <div class="resultado">
-                <label for="total">Total:</label>
-                <span id="total">0.00</span>
+
+
+
+
+        <div class="contas">
+
+            <div class="total">
+                <div class="resultado">
+                    <label for="total">Total:</label>
+                    <span id="total">0.00</span>
+                </div>
             </div>
+
+            <!-- Campo de entrada para o valor pago -->
+            <div>
+                <label for="valor_pago">Valor Pago:</label>
+                <input type="number" name="valor_pago" id="valor_pago" class="inputUser" min="0" step="0.01">
+            </div>
+
+            <!-- Campo de entrada para o troco -->
+            <div>
+                <label for="troco">Troco:</label>
+                <input type="text" name="troco" id="troco" class="inputUser" value="0.00" readonly>
+            </div>
+
+            <div class="btn">
+                <input type="submit" name="submit" id="submit" value="Enviar" class="submit">
+            </div>
+
         </div>
 
-        <!-- Campo de entrada para o valor pago -->
-        <div>
-            <label for="valor_pago">Valor Pago:</label>
-            <input type="number" name="valor_pago" id="valor_pago" class="inputUser" min="0" step="0.01">
-        </div>
-
-        <!-- Campo de entrada para o troco -->
-        <div>
-            <label for="troco">Troco:</label>
-            <input type="text" name="troco" id="troco" class="inputUser" value="0.00" readonly>
-        </div>
-
-        <div class="btn">
-            <input type="submit" name="submit" id="submit" value="Enviar" class="submit">
-        </div>
     </form>
 
     <script>
