@@ -5,7 +5,8 @@
 }
 
 body{
-    font-family: FreeMono, monospace;
+  font-family: FreeMono, monospace;
+  background-size: cover;
 }
 
 .area-form {
